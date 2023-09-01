@@ -1,20 +1,11 @@
 import express from 'express';
-import { ApolloServer } from '@apollo/server';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import { startStandaloneServer } from '@apollo/server/standalone';
+import { typeDefs } from './schema';
 
-const typeDefs = `#graphql
-  type Products {
-    title: String!
-    price: Int!
-    quantity: Int!
-  }
-  type Query {
-    getProducts: [Products]
-  }
-`;
 
 const products = [
     {
