@@ -2,6 +2,7 @@
   "name": "express-graphql-server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "repository": "https://github.com/shahid-shafi/nodejs-postgresql.git",
   "author": "shahid-shafi <shahidshafi.org@gmail.com>",
   "license": "MIT",
